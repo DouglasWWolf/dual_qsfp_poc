@@ -1,0 +1,32 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-332,-133",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port QSFP_RX -pg 1 -lvl 3 -x 620 -y 170 -defaultsOSRD
+preplace port QSFP0_RX -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port QSFP1_RX -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_qsfp0_user_clk -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_qsfp0_resetn -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_qsfp1_resetn -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_qsfp1_user_clk -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace inst axis_combiner -pg 1 -lvl 2 -x 440 -y 170 -defaultsOSRD
+preplace inst axis_rx_fifo_0 -pg 1 -lvl 1 -x 150 -y 280 -defaultsOSRD
+preplace inst axis_rx_fifo_1 -pg 1 -lvl 1 -x 150 -y 90 -defaultsOSRD
+preplace netloc qsfp0_user_clk_out 1 0 2 20 180 N
+preplace netloc reset_inverter_Res 1 0 2 30 200 N
+preplace netloc s_axis_aresetn_1 1 0 1 NJ 80
+preplace netloc s_axis_aclk_1 1 0 1 NJ 100
+preplace netloc axis_combiner_0_M_AXIS 1 2 1 N 170
+preplace netloc Conn1 1 0 1 NJ 260
+preplace netloc axis_rx_fifo_0_M_AXIS 1 1 1 280 140n
+preplace netloc Conn2 1 0 1 NJ 60
+preplace netloc axis_rx_fifo_1_M_AXIS 1 1 1 270 90n
+levelinfo -pg 1 0 150 440 620
+pagesize -pg 1 -db -bbox -sgen -160 0 740 360
+"
+}
+

@@ -1,0 +1,86 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"0.867123",
+   "Default View_TopLeft":"-205,-59",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port qsfp_rx -pg 1 -lvl 4 -x 1060 -y 120 -defaultsOSRD -right
+preplace port qsfp_clk -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port qsfp_tx -pg 1 -lvl 4 -x 1060 -y 60 -defaultsOSRD
+preplace port USER_DATA_S_AXIS_TX -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port USER_DATA_M_AXIS_RX -pg 1 -lvl 4 -x 1060 -y 100 -defaultsOSRD
+preplace port port-id_init_clk -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_channel_up -pg 1 -lvl 4 -x 1060 -y 80 -defaultsOSRD
+preplace port port-id_sys_reset_out -pg 1 -lvl 4 -x 1060 -y 240 -defaultsOSRD
+preplace port port-id_reset_in -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_user_clk_out -pg 1 -lvl 4 -x 1060 -y 220 -defaultsOSRD
+preplace portBus resetn_out -pg 1 -lvl 4 -x 1060 -y 180 -defaultsOSRD
+preplace inst aurora_core -pg 1 -lvl 2 -x 490 -y 60 -swap {0 1 2 3 24 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 4 22 23 21 25 26 27 28 29 31 33 34 30 36 37 35 38 39 32 40 41 42} -defaultsOSRD -pinDir USER_DATA_S_AXIS_TX left -pinY USER_DATA_S_AXIS_TX 0L -pinDir USER_DATA_M_AXIS_RX right -pinY USER_DATA_M_AXIS_RX 80R -pinDir GT_DIFF_REFCLK1 left -pinY GT_DIFF_REFCLK1 20L -pinDir CORE_STATUS right -pinY CORE_STATUS 20R -pinDir CORE_STATUS.channel_up right -pinY CORE_STATUS.channel_up 40R -pinDir CORE_CONTROL left -pinY CORE_CONTROL 40L -pinDir GT_SERIAL_TX right -pinY GT_SERIAL_TX 0R -pinDir GT_SERIAL_RX right -pinY GT_SERIAL_RX 60R -pinDir QPLL_CONTROL_OUT right -pinY QPLL_CONTROL_OUT 100R -pinDir reset_pb left -pinY reset_pb 120L -pinDir pma_init left -pinY pma_init 140L -pinDir tx_out_clk right -pinY tx_out_clk 140R -pinDir init_clk left -pinY init_clk 60L -pinDir link_reset_out right -pinY link_reset_out 220R -pinDir user_clk_out right -pinY user_clk_out 240R -pinDir sync_clk_out right -pinY sync_clk_out 200R -pinDir gt_qpllclk_quad1_out right -pinY gt_qpllclk_quad1_out 260R -pinDir gt_qpllrefclk_quad1_out right -pinY gt_qpllrefclk_quad1_out 280R -pinDir sys_reset_out right -pinY sys_reset_out 120R -pinDir gt_reset_out right -pinY gt_reset_out 300R -pinDir gt_refclk1_out right -pinY gt_refclk1_out 320R -pinBusDir gt_powergood right -pinBusY gt_powergood 340R
+preplace inst reset_manager_0 -pg 1 -lvl 1 -x 150 -y 180 -defaultsOSRD -pinDir clock left -pinY clock 0L -pinDir reset_in left -pinY reset_in 20L -pinDir reset_pb_out right -pinY reset_pb_out 0R -pinDir pma_init_out right -pinY pma_init_out 20R
+preplace inst reset_inverter -pg 1 -lvl 3 -x 870 -y 180 -defaultsOSRD -pinBusDir Op1 left -pinBusY Op1 0L -pinBusDir Res right -pinBusY Res 0R
+preplace netloc aurora_core_channel_up 1 2 2 720J 40 1020J
+preplace netloc aurora_core_sys_reset_out 1 2 2 720 240 NJ
+preplace netloc init_clk_1 1 0 2 20 120 N
+preplace netloc reset_manager_0_reset_pb_out 1 1 1 N 180
+preplace netloc reset_manager_0_pma_init_out 1 1 1 N 200
+preplace netloc reset_in_1 1 0 1 NJ 200
+preplace netloc reset_inverter_Res 1 3 1 N 180
+preplace netloc aurora_core_user_clk_out 1 2 2 NJ 300 1020J
+preplace netloc Conn3 1 2 2 NJ 120 NJ
+preplace netloc Conn4 1 0 2 NJ 80 NJ
+preplace netloc Conn5 1 2 2 NJ 60 NJ
+preplace netloc USER_DATA_S_AXIS_TX_1 1 0 2 NJ 60 NJ
+preplace netloc Conn1 1 2 2 700J 20 1040J
+levelinfo -pg 1 0 150 490 870 1060
+pagesize -pg 1 -db -bbox -sgen -220 0 1290 460
+",
+   "No Loops_ScaleFactor":"0.840894",
+   "No Loops_TopLeft":"-216,-134",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port qsfp1_rx -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace port qsfp1_clk -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace port qsfp1_tx -pg 1 -lvl 3 -x 920 -y 430 -defaultsOSRD
+preplace port s_axi_lite -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port port-id_init_clk -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace port port-id_channel_up_1 -pg 1 -lvl 3 -x 920 -y 290 -defaultsOSRD
+preplace port port-id_sys_reset_out_1 -pg 1 -lvl 3 -x 920 -y 590 -defaultsOSRD
+preplace port port-id_aurora_pma_init_in -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port port-id_axi_c2c_link_status_out -pg 1 -lvl 3 -x 920 -y 230 -defaultsOSRD
+preplace port port-id_axi_c2c_config_error_out -pg 1 -lvl 3 -x 920 -y 210 -defaultsOSRD
+preplace port port-id_axi_c2c_link_error_out -pg 1 -lvl 3 -x 920 -y 270 -defaultsOSRD
+preplace port port-id_axi_c2c_lnk_hndlr_in_progress -pg 1 -lvl 3 -x 920 -y 110 -defaultsOSRD
+preplace port port-id_axi_c2c_multi_bit_error_out -pg 1 -lvl 3 -x 920 -y 250 -defaultsOSRD
+preplace port port-id_s_aresetn -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace inst aurora_core -pg 1 -lvl 2 -x 700 -y 500 -defaultsOSRD
+preplace inst axi_chip2chip_0 -pg 1 -lvl 1 -x 260 -y 180 -defaultsOSRD
+preplace netloc init_clk_1 1 0 2 20 560 NJ
+preplace netloc aurora_core_channel_up 1 0 3 40 350 500J 280 900
+preplace netloc aurora_core_sys_reset_out 1 2 1 NJ 590
+preplace netloc aurora_pma_init_in_1 1 0 1 NJ 230
+preplace netloc aurora_core_mmcm_not_locked_out 1 0 3 50 360 510J 290 880
+preplace netloc aurora_core_user_clk_out 1 0 3 30 710 NJ 710 880
+preplace netloc axi_chip2chip_0_axi_c2c_link_status_out 1 1 2 NJ 230 NJ
+preplace netloc axi_chip2chip_0_axi_c2c_config_error_out 1 1 2 NJ 210 NJ
+preplace netloc axi_chip2chip_0_axi_c2c_link_error_out 1 1 2 NJ 270 NJ
+preplace netloc axi_chip2chip_0_axi_c2c_lnk_hndlr_in_progress 1 1 2 NJ 110 NJ
+preplace netloc axi_chip2chip_0_axi_c2c_multi_bit_error_out 1 1 2 NJ 250 NJ
+preplace netloc s_aresetn_1 1 0 1 NJ 150
+preplace netloc axi_chip2chip_0_aurora_pma_init_out 1 1 1 490 170n
+preplace netloc axi_chip2chip_0_aurora_reset_pb 1 1 1 480 190n
+preplace netloc Conn3 1 0 2 NJ 500 NJ
+preplace netloc Conn4 1 0 2 NJ 460 NJ
+preplace netloc Conn5 1 2 1 NJ 430
+preplace netloc axi_chip2chip_0_AXIS_TX 1 1 1 520 90n
+preplace netloc Conn1 1 0 1 NJ 90
+preplace netloc Conn2 1 0 1 NJ 70
+preplace netloc aurora_core_USER_DATA_M_AXIS_RX 1 0 3 20 10 NJ 10 890
+levelinfo -pg 1 0 260 700 920
+pagesize -pg 1 -db -bbox -sgen -180 0 1180 720
+"
+}
+0
